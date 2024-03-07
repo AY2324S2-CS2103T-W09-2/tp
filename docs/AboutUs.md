@@ -21,41 +21,32 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 
 * Role: Developer
 
-### Jane Doe
+### Ye Sifan
 
-<img src="images/johndoe.png" width="200px">
+<img src="images/yespiggy.png" width="200px">
 
-[[github](http://github.com/johndoe)]
-[[portfolio](team/shuheng.md)]
+[[github](http://github.com/yespiggy)]
+[[portfolio](team/sifan.md)]
 
 * Role: Team Lead
 * Responsibilities: UI
 
-### Johnny Doe
+### Natasya Hadiatullah Buhari
 
-<img src="images/johndoe.png" width="200px">
+<img src="images/menatahari.png" width="200px">
 
-[[github](http://github.com/johndoe)] [[portfolio](team/shuheng.md)]
+[[github](http://github.com/menatahari)] [[portfolio](team/natasya.md)]
 
 * Role: Developer
 * Responsibilities: Data
 
-### Jean Doe
+### Wang Wen Kai Daniel
 
 <img src="images/johndoe.png" width="200px">
 
 [[github](http://github.com/johndoe)]
-[[portfolio](team/shuheng.md)]
+[[portfolio](team/daniel.md)]
 
 * Role: Developer
 * Responsibilities: Dev Ops + Threading
 
-### James Doe
-
-<img src="images/johndoe.png" width="200px">
-
-[[github](http://github.com/johndoe)]
-[[portfolio](team/shuheng.md)]
-
-* Role: Developer
-* Responsibilities: UI
