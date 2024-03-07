@@ -8,10 +8,9 @@
         "about-us": "About Us",
         "project-team": "Project team",
         "yeo-shu-heng": "Yeo Shu Heng",
-        "jane-doe": "Jane Doe",
-        "johnny-doe": "Johnny Doe",
-        "jean-doe": "Jean Doe",
-        "james-doe": "James Doe"
+        "daniel-wang": "Daniel Wang",
+        "ye-si-fan": "Ye Si Fan",
+        "natasya-hadiatullah-buhari": "Natasya Hadiatullah Buhari"
       },
       "headingKeywords": {}
     },
@@ -136,8 +135,32 @@
       "headingKeywords": {}
     },
     {
+      "src": "team/danielwang.md",
+      "title": "Daniel Wang's Project Portfolio Page",
+      "headings": {
+        "project-addressbook-level-3": "Project: AddressBook Level 3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/natasya.md",
+      "title": "Natasya's Project Portfolio Page",
+      "headings": {
+        "project-addressbook-level-3": "Project: AddressBook Level 3"
+      },
+      "headingKeywords": {}
+    },
+    {
       "src": "team/shuheng.md",
       "title": "John Doe's Project Portfolio Page",
+      "headings": {
+        "project-addressbook-level-3": "Project: AddressBook Level 3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/sifan.md",
+      "title": "Si Fan's Project Portfolio Page",
       "headings": {
         "project-addressbook-level-3": "Project: AddressBook Level 3"
       },
