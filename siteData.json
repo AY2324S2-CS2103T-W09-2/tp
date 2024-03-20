@@ -114,8 +114,10 @@
         "listing-all-persons-list": "Listing all persons : list",
         "adding-or-editing-a-startup-note-note": "Adding or Editing a Startup Note: note",
         "editing-a-person-edit": "Editing a person : edit",
-        "locating-persons-by-name-find": "Locating persons by name: find",
-        "deleting-a-person-delete": "Deleting a person : delete",
+        "locating-startups-by-name-find": "Locating startups by name: find",
+        "locating-startups-by-funding-stage-find": "Locating startups by funding stage: find",
+        "locating-startups-by-industry-find": "Locating startups by industry: find",
+        "deleting-a-startup-delete": "Deleting a startup : delete",
         "clearing-all-entries-clear": "Clearing all entries : clear",
         "exiting-the-program-exit": "Exiting the program : exit",
         "saving-the-data": "Saving the data",
@@ -131,7 +133,7 @@
       "src": "index.md",
       "title": "",
       "headings": {
-        "addressbook-level-3": "AddressBook Level-3"
+        "capitalconnect": "CapitalConnect"
       },
       "headingKeywords": {}
     },
