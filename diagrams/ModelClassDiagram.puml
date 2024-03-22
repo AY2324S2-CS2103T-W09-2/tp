@@ -19,6 +19,8 @@ Class Email
 Class Name
 Class Phone
 Class Tag
+Class Industry
+Class FundingStage
 
 Class I #FFFFFF
 }
@@ -35,16 +37,18 @@ ModelManager -left-> "1" AddressBook
 ModelManager -right-> "1" UserPrefs
 UserPrefs .up.|> ReadOnlyUserPrefs
 
-AddressBook *--> "1" UniquePersonList
-UniquePersonList --> "~* all" Person
-Person *--> Name
-Person *--> Phone
-Person *--> Email
-Person *--> Address
-Person *--> "*" Tag
+AddressBook *--> "1" UniqueStartupList
+UniqueStartupList --> "~* all" Startup
+Startup *--> Name
+Startup *--> Phone
+Startup *--> Email
+Startup *--> Address
+Startup *--> Industry
+Startup *--> FundingStage
+Startup *--> "*" Tag
 
-Person -[hidden]up--> I
-UniquePersonList -[hidden]right-> I
+Startup -[hidden]up--> I
+UniqueStartupList -[hidden]right-> I
 
 Name -[hidden]right-> Phone
 Phone -[hidden]right-> Address
