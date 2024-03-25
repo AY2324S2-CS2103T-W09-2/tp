@@ -1,0 +1,80 @@
+@startuml
+!include style.puml
+skinparam ArrowFontStyle plain
+
+box Logic LOGIC_COLOR_T1
+participant ":LogicManager" as LogicManager LOGIC_COLOR
+participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
+participant ":NoteCommandParser" as NoteCommandParser LOGIC_COLOR
+participant "d:NoteCommand" as NoteCommand LOGIC_COLOR
+participant "r:CommandResult" as CommandResult LOGIC_COLOR
+end box
+
+box Model MODEL_COLOR_T1
+participant "m:Model" as Model MODEL_COLOR
+end box
+
+[-> LogicManager : execute("note 1 hello there")
+activate LogicManager
+
+LogicManager -> AddressBookParser : parseCommand("note 1 hello there")
+activate AddressBookParser
+
+create NoteCommandParser
+AddressBookParser -> NoteCommandParser
+activate NoteCommandParser
+
+NoteCommandParser --> AddressBookParser
+deactivate NoteCommandParser
+
+AddressBookParser -> NoteCommandParser : parse("1 hello there")
+activate NoteCommandParser
+
+create NoteCommand
+NoteCommandParser -> NoteCommand
+activate NoteCommand
+
+NoteCommand --> NoteCommandParser :
+deactivate NoteCommand
+
+NoteCommandParser --> AddressBookParser : d
+deactivate NoteCommandParser
+'Hidden arrow to position the destroy marker below the end of the activation bar.
+NoteCommandParser -[hidden]-> AddressBookParser
+destroy NoteCommandParser
+
+AddressBookParser --> LogicManager : d
+deactivate AddressBookParser
+
+LogicManager -> NoteCommand : execute(m)
+activate NoteCommand
+
+NoteCommand -> Model : getFilteredStartupList()
+activate Model
+Model --> NoteCommand : lastShownList
+deactivate Model
+
+NoteCommand -> Model : setStartup(startupToEdit, editedStartup)
+activate Model
+Model --> NoteCommand
+deactivate Model
+
+NoteCommand -> Model : updateFilteredStartupList(PREDICATE_SHOW_ALL_STARTUPS)
+activate Model
+Model --> NoteCommand
+deactivate Model
+
+create CommandResult
+NoteCommand -> CommandResult : new(String.format(MESSAGE_EDIT_STARTUP_SUCCESS, editedStartup))
+activate CommandResult
+
+CommandResult --> NoteCommand : r
+deactivate CommandResult
+
+NoteCommand --> LogicManager : r
+deactivate NoteCommand
+
+[<-- LogicManager
+deactivate LogicManager
+@enduml
+
