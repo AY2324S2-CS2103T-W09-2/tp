@@ -20,4 +20,5 @@ Startup *--> Email
 Startup *--> Address
 Startup *--> Industry
 Startup *--> FundingStage
+Startup *--> Valuation
 @enduml

@@ -21,6 +21,7 @@ Class Phone
 Class Tag
 Class Industry
 Class FundingStage
+Class Valuation
 
 Class I #FFFFFF
 }
@@ -46,6 +47,7 @@ Startup *--> Address
 Startup *--> Industry
 Startup *--> FundingStage
 Startup *--> "*" Tag
+Startup *--> Valuation
 
 Startup -[hidden]up--> I
 UniqueStartupList -[hidden]right-> I
