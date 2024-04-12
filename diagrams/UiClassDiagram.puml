@@ -13,6 +13,8 @@ Class HelpWindow
 Class ResultDisplay
 Class StartupListPanel
 Class StartupCard
+Class PersonListPanel
+Class NoteListPanel
 Class StatusBarFooter
 Class CommandBox
 }
@@ -33,6 +35,8 @@ UiManager -down-> "1" MainWindow
 MainWindow *-down->  "1" CommandBox
 MainWindow *-down-> "1" ResultDisplay
 MainWindow *-down-> "1" StartupListPanel
+MainWindow *-down-> "1" PersonListPanel
+MainWindow *-down-> "1" NoteListPanel
 MainWindow *-down-> "1" StatusBarFooter
 MainWindow --> "0..1" HelpWindow
 
@@ -44,6 +48,8 @@ ResultDisplay --|> UiPart
 CommandBox --|> UiPart
 StartupListPanel --|> UiPart
 StartupCard --|> UiPart
+PersonListPanel --|> UiPart
+NoteListPanel --|> UiPart
 StatusBarFooter --|> UiPart
 HelpWindow --|> UiPart
 
@@ -51,6 +57,8 @@ StartupCard ..> Model
 UiManager -right-> Logic
 MainWindow -left-> Logic
 
+PersonListPanel -[hidden]left- NoteListPanel
+NoteListPanel -[hidden]left- StartupListPanel
 StartupListPanel -[hidden]left- HelpWindow
 HelpWindow -[hidden]left- CommandBox
 CommandBox -[hidden]left- ResultDisplay
