@@ -22,6 +22,12 @@ Class Tag
 Class Industry
 Class FundingStage
 Class Valuation
+Class Note
+
+Class UniquePersonList
+Class PersonName
+Class PersonEmail
+Class Description
 
 Class I #FFFFFF
 }
@@ -48,6 +54,12 @@ Startup *--> Industry
 Startup *--> FundingStage
 Startup *--> "*" Tag
 Startup *--> Valuation
+Startup *--> "*" Note
+Startup *--> "1" UniquePersonList
+UniquePersonList --> "*" Person
+Person *--> PersonName
+Person *--> PersonEmail
+Person *--> "*" Description
 
 Startup -[hidden]up--> I
 UniqueStartupList -[hidden]right-> I

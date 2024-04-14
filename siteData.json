@@ -53,8 +53,9 @@
         "find-commands": "Find Commands",
         "addnote-editnote-and-deletenote-commands": "AddNote, EditNote, and DeleteNote Commands",
         "common-features-across-note-commands": "Common Features Across Note Commands",
-        "add-edit-and-delete-person-commands": "Add, Edit, and Delete Person Commands",
+        "add-and-edit-person-commands": "Add and Edit Person Commands",
         "add-person-command": "Add Person Command",
+        "edit-person-command": "Edit Person Command",
         "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
         "appendix-requirements": "Appendix: Requirements",
         "product-scope": "Product scope",
@@ -64,12 +65,17 @@
         "glossary": "Glossary",
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
-        "deleting-a-startup": "Deleting a startup",
         "adding-a-startup": "Adding a startup",
+        "deleting-a-startup": "Deleting a startup",
         "editing-a-startup": "Editing a startup",
+        "listing-startups": "Listing Startups",
+        "finding-a-startup": "Finding a startup",
         "adding-a-note-to-a-startup": "Adding a Note to a Startup",
         "editing-a-note-in-a-startup": "Editing a Note in a Startup",
         "deleting-a-note-from-a-startup": "Deleting a Note from a Startup",
+        "adding-a-person-to-a-startup": "Adding a Person to a Startup",
+        "editing-a-person-in-a-startup": "Editing a Person in a Startup",
+        "deleting-a-person-from-a-startup": "Deleting a Person from a Startup",
         "appendix-planned-enhancement": "Appendix: Planned Enhancement"
       },
       "headingKeywords": {}
@@ -156,6 +162,14 @@
       "title": "Daniel's Project Portfolio Page",
       "headings": {
         "project-capitalconnect": "Project: CapitalConnect"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/menatahari.md",
+      "title": "Natasya's Project Portfolio Page",
+      "headings": {
+        "project-addressbook-level-3": "Project: AddressBook Level 3"
       },
       "headingKeywords": {}
     },

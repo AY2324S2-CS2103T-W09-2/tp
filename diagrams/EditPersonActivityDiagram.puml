@@ -1,0 +1,26 @@
+@startuml
+skin rose
+skinparam ActivityFontSize 15
+skinparam ArrowFontSize 12
+start
+:User enters `edit-p 1 1 pn/John pe/johndoe@gmail.com pd/founder`;
+:Input passed into AddressBookParser#parse;
+:Call EditPersonCommandParser#parse;
+:Create EditPersonDescriptor;
+:Store updated parameters in EditPersonDescriptor;
+:Return new EditPersonCommand;
+:Call EditPersonCommand#execute;
+
+'Since the beta syntax does not support placing the condition outside the
+'diamond we place it as the true branch instead.
+
+if () then ([Person email exists in the startup person list])
+:Throw Exception;
+:Show error message;
+else ([else])
+:Update persons list of the first startup with edited person;
+:Show success message in the command result and
+show updated person in the key employee box;
+endif
+stop
+@enduml
