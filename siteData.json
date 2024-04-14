@@ -9,7 +9,7 @@
         "project-team": "Project team",
         "yeo-shu-heng": "Yeo Shu Heng",
         "daniel-wang": "Daniel Wang",
-        "ye-si-fan": "Ye Si Fan",
+        "ye-sifan": "Ye Sifan",
         "natasya-hadiatullah-buhari": "Natasya Hadiatullah Buhari"
       },
       "headingKeywords": {}
@@ -50,6 +50,8 @@
         "storage-component": "Storage component",
         "common-classes": "Common classes",
         "implementation": "Implementation",
+        "find-commands": "Find Commands",
+        "add-person-command": "Add Person Command",
         "proposed-undo-redo-feature": "[Proposed] Undo/redo feature",
         "proposed-data-archiving": "[Proposed] Data archiving",
         "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
@@ -170,10 +172,10 @@
       "headingKeywords": {}
     },
     {
-      "src": "team/sifan.md",
-      "title": "Si Fan's Project Portfolio Page",
+      "src": "team/yespiggy.md",
+      "title": "Sifan's Project Portfolio Page",
       "headings": {
-        "project-addressbook-level-3": "Project: AddressBook Level 3"
+        "project-capitalconnect": "Project: CapitalConnect"
       },
       "headingKeywords": {}
     },
