@@ -62,7 +62,9 @@
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
         "deleting-a-startup": "Deleting a startup",
-        "saving-data": "Saving data"
+        "adding-a-startup": "Adding a startup",
+        "editing-a-startup": "Editing a startup",
+        "appendix-planned-enhancement": "Appendix: Planned Enhancement"
       },
       "headingKeywords": {}
     },
