@@ -51,9 +51,10 @@
         "common-classes": "Common classes",
         "implementation": "Implementation",
         "find-commands": "Find Commands",
+        "addnote-editnote-and-deletenote-commands": "AddNote, EditNote, and DeleteNote Commands",
+        "common-features-across-note-commands": "Common Features Across Note Commands",
+        "add-edit-and-delete-person-commands": "Add, Edit, and Delete Person Commands",
         "add-person-command": "Add Person Command",
-        "proposed-undo-redo-feature": "[Proposed] Undo/redo feature",
-        "proposed-data-archiving": "[Proposed] Data archiving",
         "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
         "appendix-requirements": "Appendix: Requirements",
         "product-scope": "Product scope",
@@ -66,6 +67,9 @@
         "deleting-a-startup": "Deleting a startup",
         "adding-a-startup": "Adding a startup",
         "editing-a-startup": "Editing a startup",
+        "adding-a-note-to-a-startup": "Adding a Note to a Startup",
+        "editing-a-note-in-a-startup": "Editing a Note in a Startup",
+        "deleting-a-note-from-a-startup": "Deleting a Note from a Startup",
         "appendix-planned-enhancement": "Appendix: Planned Enhancement"
       },
       "headingKeywords": {}
@@ -148,10 +152,10 @@
       "headingKeywords": {}
     },
     {
-      "src": "team/danielwang.md",
-      "title": "Daniel Wang's Project Portfolio Page",
+      "src": "team/dwangwk.md",
+      "title": "Daniel's Project Portfolio Page",
       "headings": {
-        "project-addressbook-level-3": "Project: AddressBook Level 3"
+        "project-capitalconnect": "Project: CapitalConnect"
       },
       "headingKeywords": {}
     },
