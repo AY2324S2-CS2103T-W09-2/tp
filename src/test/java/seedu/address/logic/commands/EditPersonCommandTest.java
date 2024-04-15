@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static seedu.address.logic.commands.CommandTestUtil.VALID_DESCRIPTION_FOUNDER;
 import static seedu.address.logic.commands.CommandTestUtil.VALID_NAME_B;
+import static seedu.address.logic.commands.CommandTestUtil.assertCommandFailure;
 import static seedu.address.logic.commands.CommandTestUtil.assertCommandSuccess;
 import static seedu.address.logic.commands.CommandTestUtil.showStartupAtIndex;
 import static seedu.address.testutil.TypicalIndexes.INDEX_FIRST_STARTUP;
@@ -16,7 +17,6 @@ import org.junit.jupiter.api.Test;
 import seedu.address.commons.core.index.Index;
 import seedu.address.logic.Messages;
 import seedu.address.logic.commands.EditPersonCommand.EditPersonDescriptor;
-import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.model.AddressBook;
 import seedu.address.model.Model;
 import seedu.address.model.ModelManager;
@@ -80,22 +80,7 @@ public class EditPersonCommandTest {
     }
 
     @Test
-    public void execute_noFieldSpecifiedUnfilteredList_success() {
-        EditPersonCommand editPersonCommand =
-                new EditPersonCommand(INDEX_FIRST_STARTUP, 1, new EditPersonDescriptor());
-        Person editedPerson = model.getFilteredStartupList().get(INDEX_FIRST_STARTUP.getZeroBased())
-                .getPersons().get(0);
-
-        String expectedMessage = String.format(
-                EditPersonCommand.MESSAGE_EDIT_PERSON_SUCCESS, Messages.format(editedPerson));
-
-        Model expectedModel = new ModelManager(new AddressBook(model.getAddressBook()), new UserPrefs());
-
-        assertCommandSuccess(editPersonCommand, model, expectedMessage, expectedModel);
-    }
-
-    @Test
-    public void execute_filteredList_success() throws CommandException {
+    public void execute_filteredList_success() {
         showStartupAtIndex(model, INDEX_FIRST_STARTUP);
 
         Startup startupInFilteredList = model.getFilteredStartupList().get(INDEX_FIRST_STARTUP.getZeroBased());
@@ -112,6 +97,37 @@ public class EditPersonCommandTest {
         showStartupAtIndex(expectedModel, INDEX_FIRST_STARTUP);
 
         assertCommandSuccess(editPersonCommand, model, expectedMessage, expectedModel);
+    }
+
+    @Test
+    public void execute_invalidStartupIndexUnfilteredList_failure() {
+        Index outOfBoundIndex = Index.fromOneBased(model.getFilteredStartupList().size() + 1);
+        Person editedPerson = new PersonBuilder()
+                .withName("Carl").withEmail("carl@gmail.com")
+                .withDescriptions("new description").build();
+        EditPersonDescriptor descriptor = new EditPersonDescriptorBuilder(editedPerson).build();
+        EditPersonCommand editPersonCommand = new EditPersonCommand(outOfBoundIndex, 1, descriptor);
+
+        assertCommandFailure(editPersonCommand, model, Messages.MESSAGE_INVALID_STARTUP_DISPLAYED_INDEX);
+    }
+
+    @Test
+    public void execute_invalidPersonIndexUnfilteredList_failure() {
+        Startup startupToEdit = model.getFilteredStartupList().get(INDEX_FIRST_STARTUP.getZeroBased());
+        int outOfBoundIndex = startupToEdit.getPersons().size() + 1;
+        EditPersonDescriptor descriptor = new EditPersonDescriptorBuilder().withName("Carl").build();
+        EditPersonCommand editPersonCommand = new EditPersonCommand(INDEX_FIRST_STARTUP, outOfBoundIndex, descriptor);
+
+        assertCommandFailure(editPersonCommand, model, "The person index provided is invalid.");
+    }
+
+    @Test
+    public void execute_duplicatePersonUnfilteredList_failure() {
+        Index indexLastStartup = Index.fromOneBased(model.getFilteredStartupList().size());
+        EditPersonDescriptor descriptor = new EditPersonDescriptorBuilder().withEmail("george@example.com").build();
+        EditPersonCommand editPersonCommand = new EditPersonCommand(indexLastStartup, 1, descriptor);
+
+        assertCommandFailure(editPersonCommand, model, EditPersonCommand.MESSAGE_DUPLICATE_PERSON);
     }
 
     @Test

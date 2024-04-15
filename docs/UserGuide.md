@@ -386,6 +386,7 @@ Example:
 * When editing descriptions, the existing descriptions of the startup will be removed i.e adding of descriptions is not cumulative.
 * You can remove all the person’s descriptions by typing `pd/` without
   specifying any descriptions after it.
+* Duplicate descriptions (case-sensitive) will be considered as one description, e.g `edit-p 1 1 pd/founder pd/founder` will have the same result as `edit-p 1 1 pd/founder`.
 * Click on the startup card that contains your edited person to see the changes.
 
 Format: `edit-p INDEX PERSON_INDEX [pn/NAME] [pe/EMAIL] [pd/DESCRIPTION]…​`

@@ -28,7 +28,7 @@ public class DeletePersonCommand extends Command {
     private final int personIndex;
 
     /**
-     * Deletes a command for a startup.
+     * Creates a DeletePersonCommand with the specified inputs.
      * @param index Index of the startup
      * @param personIndex Index of the person within the startup
      */
@@ -82,7 +82,7 @@ public class DeletePersonCommand extends Command {
         }
 
         DeletePersonCommand e = (DeletePersonCommand) other;
-        // Compare both the startup index and the note index within that startup
+        // Compare both the startup index and the person index within that startup
         return index.equals(e.index)
                 && personIndex == e.personIndex;
     }

@@ -54,7 +54,7 @@ public class EditPersonCommandParserTest {
         assertParseFailure(parser, "1 1"
             + CommandTestUtil.INVALID_PERSONDESC_DESC, Description.MESSAGE_CONSTRAINTS); // invalid description
 
-        // invalid phone followed by valid email
+        // invalid person name followed by valid email
         assertParseFailure(parser, "1 1"
             + CommandTestUtil.INVALID_PERSONNAME_DESC
             + CommandTestUtil.EMAIL_DESC_A, PersonName.MESSAGE_CONSTRAINTS);

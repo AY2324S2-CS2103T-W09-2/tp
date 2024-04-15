@@ -28,15 +28,6 @@ public class PersonListPanel extends UiPart<Region> {
     @FXML
     private VBox personContainer; // Direct reference to the VBox containing the persons
 
-    @FXML
-    private Label name;
-    @FXML
-    private Label email;
-    @FXML
-    private FlowPane descriptions;
-    @FXML
-    private Label title;
-
     /**
      * Displays the person list panel.
      * @param persons The person list to update.
@@ -60,6 +51,7 @@ public class PersonListPanel extends UiPart<Region> {
         personContainer.getChildren().add(title);
 
         if (persons.isEmpty()) {
+            logger.info("No person displayed in key employee box");
             // Add a placeholder to fill the background color
             Label placeholderLabel = new Label("No key employees to display");
             placeholderLabel.setStyle("-fx-text-fill: white;");
@@ -67,17 +59,26 @@ public class PersonListPanel extends UiPart<Region> {
             placeholderLabel.setAlignment(Pos.CENTER);
             personContainer.getChildren().add(placeholderLabel);
         } else {
+            logger.info("Displaying persons in key employee box");
             // Display persons with alternating background colors
             for (int i = 0; i < persons.size(); i++) {
                 Person person = persons.get(i);
                 Label name = new Label(String.format("%d. ", i + 1) + person.getName().toString());
                 Label email = new Label(person.getEmail().toString());
-                FlowPane descriptionsPane = new FlowPane();
+                FlowPane descriptionsPane = new FlowPane(Orientation.VERTICAL);
+                VBox personBox = new VBox();
+
+                // Set alternating background colors
+                String style = i % 2 == 0 ? "-fx-background-color: #444; -fx-padding: 5;"
+                        : "-fx-background-color: #555; -fx-padding: 5;";
+
                 descriptionsPane.setPrefWrapLength(Region.USE_PREF_SIZE);
                 descriptionsPane.setMaxWidth(Region.USE_PREF_SIZE); // Set maxWidth to USE_PREF_SIZE
                 descriptionsPane.setVgap(4);
                 descriptionsPane.setHgap(4);
-                descriptionsPane.setOrientation(Orientation.VERTICAL);
+                name.setStyle("-fx-font-size: 18px; -fx-text-fill: white; -fx-wrap-text: true");
+                email.setStyle("-fx-text-fill: white; -fx-wrap-text: true");
+                personBox.setStyle(style);
 
                 person.getDescriptions().stream()
                         .sorted(Comparator.comparing(description -> description.descriptionName))
@@ -86,15 +87,7 @@ public class PersonListPanel extends UiPart<Region> {
                             label.setStyle("-fx-text-fill: white; -fx-wrap-text: true");
                             descriptionsPane.getChildren().add(label);
                         });
-                name.setStyle("-fx-font-size: 18px; -fx-text-fill: white; -fx-wrap-text: true");
-                email.setStyle("-fx-text-fill: white; -fx-wrap-text: true");
 
-                // Set alternating background colors
-                String style = i % 2 == 0 ? "-fx-background-color: #444; -fx-padding: 5;"
-                        : "-fx-background-color: #555; -fx-padding: 5;";
-
-                VBox personBox = new VBox();
-                personBox.setStyle(style);
                 personBox.getChildren().addAll(name, email, descriptionsPane);
                 personContainer.getChildren().add(personBox);
             }

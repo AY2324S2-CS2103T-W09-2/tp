@@ -249,7 +249,7 @@ The following sequence diagram illustrates the process of execution of an add pe
 <puml src="diagrams/AddPerson.puml" alt="AddPerson" />
 
 ### Edit Person Command
-The edit person command allows users to edit key employees' information into a startup.
+The edit person command allows users to edit key employees' information from a startup.
 
 The key employee information will be displayed in the people pane, next to the startup card view. Through this function, users can keep track of employees' name, email, and other related information.
 
@@ -259,7 +259,7 @@ A typical program flow is as follows:
 3. The `EditPersonCommandParser` checks whether all required fields are entered and whether the both indexes are valid. If all checks are passed, the program will move onto `EditPersonCommand`.
 4. If the EditPersonCommand doesn't cause duplicate key employee to exist in the startup (a duplicate key employee is noted by having the same email as an existing key employee) the startup's employee information will then be updated.
 
-The following sequence diagram illustrates the process of execution of an add person command.
+The following activity diagram illustrates the process of execution of an edit person command.
 
 <puml src="diagrams/EditPersonActivityDiagram.puml" alt="EditPerson" />
 
@@ -317,12 +317,11 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 | `* *`    | intermediate user | delete key employee's information from the startups | remove outdated employee information from a startup                                           |
 
 
-
 ### Use cases
 
 (For all use cases below, the **System** is the `AddressBook` and the **Actor** is the `user`, unless specified otherwise)
 
-**Use case: Add a startup investment**
+#### Use case: UC1 - Add a startup investment
 
 **MSS**
 
@@ -355,7 +354,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
       Use case resumes at step 2.
 
 
-**Use case: Search for startup investments by names**
+#### Use case: UC2 - Search for startup investments by names
 
 **MSS**
 
@@ -399,7 +398,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
       Use case resumes at step 2.
 
 
-**Use case: Search for startup investments by funding stages**
+#### Use case: UC3 - Search for startup investments by funding stages**
 
 **MSS**
 
@@ -438,7 +437,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
       Use case ends.
 
 
-**Use case: Delete a startup investment from the portfolio**
+#### Use case: UC4 - Delete a startup investment from the portfolio
 
 **MSS**
 
@@ -465,7 +464,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
       Use case ends.
 
-**Use case: Edit a startup investment from the portfolio**
+#### Use case: UC5 - Edit a startup investment from the portfolio
 
 **MSS**
 
@@ -499,7 +498,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
       Use case ends.
 
-**Use case: List all startups in CapitalConnect**
+#### Use case: UC6 - List all startups in CapitalConnect
 
 **MSS**
 1. User requests to list all startups in CapitalConnect.
@@ -507,7 +506,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 **Use case ends.**
 
-**Use case: Clear all startups in CapitalConnect**
+#### Use case: UC7 - Clear all startups in CapitalConnect
 
 **MSS**
 1. User requests to clear all startups in CapitalConnect.
@@ -516,7 +515,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 **Use case ends.**
 
-**Use Case: Add a Note to a Startup**
+#### Use Case: UC8 - Add a Note to a Startup
 
 **MSS**
 
@@ -539,7 +538,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 - 5a1. CapitalConnect shows an error message indicating the issue.
 - **Use case ends.**
 
-**Use Case: Edit an Existing Note of a Startup**
+#### Use Case: UC9 - Edit an Existing Note of a Startup
 
 **MSS**
 
@@ -562,7 +561,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 - 5a1. CapitalConnect shows an error message indicating the issue.
 - **Use case resumes at step 2.**
 
-**Use Case: Delete a Note from a Startup**
+#### Use Case: UC10 - Delete a Note from a Startup
 
 **MSS**
 
@@ -585,7 +584,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 - 5a1. CapitalConnect shows an error message indicating the issue.
 - **Use case resumes at step 2.**
 
-**Use Case: Add a Person to a Startup**
+#### Use Case: UC11 - Add a Person to a Startup
 
 **MSS**
 
@@ -616,7 +615,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
       Use case resumes at step 2.
 
 
-**Use Case: Edit an Existing Person in a Startup**
+#### Use Case: UC12 - Edit an Existing Person in a Startup
 
 **MSS**
 
@@ -644,7 +643,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
       Use case resumes at step 2.
 
-**Use Case: Delete a Person from a Startup**
+#### Use Case: UC13 - Delete a Person from a Startup
 
 **MSS**
 
@@ -705,14 +704,25 @@ testers are expected to do more *exploratory* testing.
 
    1. Download the jar file and copy into an empty folder
 
-   1. Double-click the jar file Expected: Shows the GUI with a set of sample contacts. The window size may not be optimum.
+   2. Double-click the jar file <br>
+      Expected: Shows the GUI with a set of sample contacts. The window size may not be optimum.
 
 2. Saving window preferences
 
    1. Resize the window to an optimum size. Move the window to a different location. Close the window.
 
-   1. Re-launch the app by double-clicking the jar file.<br>
+   2. Re-launch the app by double-clicking the jar file.<br>
        Expected: The most recent window size and location is retained.
+
+### Getting help
+
+1. Get help message on the usage of CapitalConnect
+
+   1. Test case: `help` <br>
+       Expected: A help box will pop up showing the link to the CapitalConnect user guide.
+
+   2. Test case: `help 1234`<br>
+       Expected: A help box will pop up showing the link to the CapitalConnect user guide.
 
 ### Adding a startup
 
@@ -784,15 +794,6 @@ testers are expected to do more *exploratory* testing.
     2. Test case: `edit 1 i/`
         Expected: No edits made to any startups, users are informed on valid industry inputs.
 
-### Listing Startups
-
-1. Viewing all startups in CapitalConnect
-   1. Prerequisites: There are startups stored in CapitalConnect.
-   2. Test case: `list` <br>
-      Expected: all previously saved startups will be shown only in the startup list. Success message is displayed. 
-   3. Test case: `list 1234`<br>
-      Expected: all previously saved contacts will be shown only in the startup list. Success message is displayed.
-
 ### Finding a startup
 
 1. Prerequisites: One startup named `Apple` in `tech` industry and with a funding stage `A` is presented in CapitalConnect.
@@ -822,6 +823,17 @@ testers are expected to do more *exploratory* testing.
     4. Test case: `find` <br>
        Expected: No startup is displayed, message of invalid command format is sent to user as given keywords should not be blank.
 
+### Listing Startups
+
+1. Viewing all startups in CapitalConnect
+
+    1. Prerequisites: There are startups stored in CapitalConnect.
+
+    2. Test case: `list` <br>
+       Expected: all previously saved startups will be shown only in the startup list. Success message is displayed.
+
+    3. Test case: `list 1234`<br>
+       Expected: all previously saved contacts will be shown only in the startup list. Success message is displayed.
 
 ### Adding a Note to a Startup
 
@@ -830,7 +842,8 @@ testers are expected to do more *exploratory* testing.
 2. Adding a note with valid inputs
 
     1. Test case: `addnote 1 Beautiful and Handsome` <br>
-       Expected: The startup at position 1 has a note added to it. Details of the Note is shown in the Note Display Box.
+       Expected: The startup at position 1 has a note added to it.
+       Details of the Note is shown in the Note Box when the startup card with index 1 is selected.
 
 3. Adding a note with invalid inputs
 
@@ -848,24 +861,25 @@ testers are expected to do more *exploratory* testing.
 2. Editing a note with valid inputs
 
     1. Test case: `editnote 1 1 New content for the note`
-        - Expected: The first note of the startup at index 1 is edited to "New content for the note". The details of the note are shown in the Note Display Box.
-
+       Expected: The first note of the startup at index 1 is edited to "New content for the note".
+       Details of the Note is shown in the Note Display Box when the startup card with index 1 is selected.
+   
 3. Editing a note with invalid inputs
 
     1. Test case: `editnote` <br>
-        - Expected: No note is edited. Error message about invalid command format is shown.
+       Expected: No note is edited. Error message about invalid command format is shown.
 
     2. Test case: `editnote 1` <br>
-        - Expected: No note is edited. Error message about invalid command format is shown.
+       Expected: No note is edited. Error message about invalid command format is shown.
 
     3. Test case: `editnote 1 2` <br>
-        - Expected: No note is edited. Error message about invalid command format is shown.
+       Expected: No note is edited. Error message about invalid command format is shown.
 
     4. Test case: `editnote 1 99 New content but invalid note index` <br>
-        - Expected: No note is edited as the note index is out of range. Error message about invalid note index is shown.
+       Expected: No note is edited as the note index is out of range. Error message about invalid note index is shown.
 
     5. Test case: `editnote 99 1 New content but invalid startup index` <br>
-        - Expected: No note is edited as the startup index is out of range. Error message about invalid startup index is shown.
+       Expected: No note is edited as the startup index is out of range. Error message about invalid startup index is shown.
 
 ### Deleting a Note from a Startup
 
@@ -874,21 +888,22 @@ testers are expected to do more *exploratory* testing.
 2. Deleting a note with valid inputs
 
     1. Test case: `deletenote 1 1` <br>
-        - Expected: The first note of the startup at index 1 is deleted. Details of the updated notes list are shown in the Note Display Box.
+       Expected: The first note of the startup at index 1 is deleted.
+       Details of the updated notes list are shown in the Note Box when the startup card with index 1 is selected.
 
 3. Deleting a note with invalid inputs
 
     1. Test case: `deletenote` <br>
-        - Expected: No note is deleted. Error message about invalid command format is shown.
+       Expected: No note is deleted. Error message about invalid command format is shown.
 
     2. Test case: `deletenote 1` <br>
-        - Expected: No note is deleted. Error message about invalid command format is shown.
+       Expected: No note is deleted. Error message about invalid command format is shown.
 
     3. Test case: `deletenote 1 99` <br>
-        - Expected: No note is deleted as the note index is out of range. Error message about invalid note index is shown.
+       Expected: No note is deleted as the note index is out of range. Error message about invalid note index is shown.
 
     4. Test case: `deletenote 99 1` <br>
-        - Expected: No note is deleted as the startup index is out of range. Error message about invalid startup index is shown.
+       Expected: No note is deleted as the startup index is out of range. Error message about invalid startup index is shown.
 
 ### Adding a Person to a Startup
 
@@ -903,6 +918,14 @@ testers are expected to do more *exploratory* testing.
    3. Test case (all fields specified): `add-p 1 pn/Joe pe/joe@gmail.com pd/founder` <br>
       Expected: The `Startup` at position 1 has a `Person` added to it. Details of the `Person` is shown in the key employee
       box if the startup card with index 1 is selected.
+   
+   4. Test case (multiple descriptions specified): `add-p 1 pn/James pe/james@gmail.com pd/Founder pd/Harvard graduate` <br>
+      Expected: The `Startup` at position 1 has a `Person` added to it. Details of the `Person` is shown in the key employee
+      box if the startup card with index 1 is selected.
+   
+   5. Test case (duplicate descriptions specified): `add-p 1 pn/Jane pe/jane@gmail.com pd/Founder pd/Founder` <br>
+      Expected: The `Startup` at position 1 has a `Person` added to it. The added `Person` should contain only one description `Founder`, since the two inputted description are duplicate.
+      Details of the `Person` is shown in the key employee box if the startup card with index 1 is selected.
 
 2. Adding a person to a startup with invalid input
 
@@ -919,7 +942,7 @@ testers are expected to do more *exploratory* testing.
    4. Test case (duplicate email): `add-p 1 pn/Jess pe/johndoe@gmail.com pd/founder` <br>
       Expected: No `Person` added to the `Startup`. Error details shown in the status message. The key employee box remains unchanged.
    
-   5. Test case (repeated fields): `add-p 1 pn/Jess pn/James pe/johndoe@gmail.com pd/founder` <br>
+   5. Test case (repeated single-valued fields): `add-p 1 pn/Jess pn/James pe/johndoe@gmail.com pd/founder` <br>
       Expected: No `Person` added to the `Startup`. Error details shown in the status message. The key employee box remains unchanged.
    
    6. Test case (invalid format for one field): `add-p 1 pn/Amy* pe/johndoe@gmail.com pd/founder` <br>
@@ -945,14 +968,22 @@ testers are expected to do more *exploratory* testing.
       box if the startup card with index 1 is selected
    
    4. Test case (description specified): `edit-p 1 1 pd/ceo` <br>
-      Expected: The description of the first person inside the startup at index 1 gets edited to `ceo`. Details of the updated `Person` is shown in the key employee
-      box if the startup card with index 1 is selected
+      Expected: The description of the first `Person` inside the `Startup` at index 1 gets edited to `ceo`. Details of the updated `Person` is shown in the key employee
+      box if the startup card with index 1 is selected.
    
    5. Test case (empty description specified): `edit-p 1 1 pd/` <br>
-      Expected: The description of the first person inside the startup at index 1 is removed. Details of the updated `Person` is shown in the key employee
-      box if the startup card with index 1 is selected
+      Expected: The description of the first `Person` inside the `Startup` at index 1 is removed. Details of the updated `Person` is shown in the key employee
+      box if the startup card with index 1 is selected.
    
-   6. Test case (all fields specified): `edit-p 1 1 pn/Jay pe/jay@gmail.com pd/founder` <br>
+   6. Test case (multiple description specified): `edit-p 1 1 pd/founder pd/new` <br>
+      Expected: The first `Person` inside the `Startup` at index 1 has two descriptions, which are `founder` and `new`. Details of the updated `Person` is shown in the key employee
+      box if the startup card with index 1 is selected.
+   
+   7. Test case (duplicate description specified): `edit-p 1 1 pd/founder pd/founder` <br>
+       Expected: The first `Person` inside the `Startup` at index 1 only has one description `founder`, since the specified tags are duplicate. Details of the updated `Person` is shown in the key employee
+       box if the startup card with index 1 is selected.
+   
+   8. Test case (all fields specified): `edit-p 1 1 pn/Jay pe/jay@gmail.com pd/founder` <br>
       Expected: The details of the first person inside the startup at index 1 gets edited. Details of the updated `Person` is shown in the key employee
       box if the startup card with index 1 is selected.
 
@@ -992,19 +1023,43 @@ testers are expected to do more *exploratory* testing.
 
 2. Deleting a person from a startup with invalid input
 
-   1. Prerequisites: For our example, we assume there are 50 startups stored in CapitalConnect and there are 10 person stored in the startup at index 1. 
+   1. Prerequisites: For our example, we assume there are 10 startups stored in CapitalConnect and there are 10 person stored in the startup at index 1. 
    
    2. Test case (invalid startup index): `delete-p 99 1` <br>
      Expected: No `Person` gets deleted. Error details shown in the status message.
    
    3. Test case (invalid person index): `delete-p 1 50` <br>
      Expected: No `Person` gets deleted. Error details shown in the status message.
-   
+
    4. Test case (missing person index): `edit-p 1 pn/name pd/founder` <br>
       Expected: No `Person` gets deleted. Error details shown in the status message.
-   
+
    5. Test case (no index specified): `delete-p` <br>
       Expected: No `Person` gets deleted. Error details shown in the status message.
+
+### Clearing All Startups Data
+
+1. Clearing all startups data in CapitalConnect
+
+    1. Prerequisites: There are startups stored in CapitalConnect.
+
+    2. Test case: `clear` <br>
+       Expected: All previously saved startups will be removed from the startup list. Success message is displayed.
+
+    3. Test case: `clear 1234`<br>
+       Expected: All previously saved startups will be removed from the startup list. Success message is displayed.
+
+
+### Saving Startups Data
+
+1. Saving startups data stored in CapitalConnect
+
+    1. Prerequisites: There are startups stored in CapitalConnect.
+
+    2. Close the program using the `exit` command or by double-clicking the close button.
+
+    3. Reopen the app
+       Expected: The app should display all previously stored startup data.
 
 ## **Appendix: Planned Enhancement**
 

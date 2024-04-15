@@ -3,10 +3,8 @@
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.VBox?>
 
-<?import javafx.scene.control.Label?>
 <ScrollPane fx:id="personScrollPane" fitToWidth="true" fitToHeight="true"
             xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-    <Label fx:id="title" style="-fx-text-fill: white; -fx-font-size: 20px;" />
     <VBox fx:id="personContainer" />
 </ScrollPane>
 
