@@ -287,7 +287,7 @@ with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 with(this){return _c('ul',[_c('li',[_c('p',[_v("4a. Invalid input or missing parameters.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("4a1. CapitalConnect shows an error message.")]),_v(" "),_c('p',[_v("Use case resumes at step 2.")])])])])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Use case: Search for startup investments by industries")])])}
+with(this){return _c('h4',{attrs:{"id":"use-case-uc3-search-for-startup-investments-by-industries"}},[_v("Use case: UC3 - Search for startup investments by industries"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc3-search-for-startup-investments-by-industries","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
@@ -302,7 +302,7 @@ with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 with(this){return _c('ul',[_c('li',[_c('p',[_v("4a. Invalid input or missing parameters.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("4a1. CapitalConnect shows an error message.")]),_v(" "),_c('p',[_v("Use case resumes at step 2.")])])])])])}
 },function anonymous(
 ) {
-with(this){return _c('h4',{attrs:{"id":"use-case-uc3-search-for-startup-investments-by-funding-stages"}},[_v("Use case: UC3 - Search for startup investments by funding stages**"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc3-search-for-startup-investments-by-funding-stages","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h4',{attrs:{"id":"use-case-uc4-search-for-startup-investments-by-funding-stages"}},[_v("Use case: UC4 - Search for startup investments by funding stages"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc4-search-for-startup-investments-by-funding-stages","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
@@ -317,7 +317,7 @@ with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 with(this){return _c('ul',[_c('li',[_c('p',[_v("4a. Invalid input or missing parameters.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("4a1. CapitalConnect shows an error message.")]),_v(" "),_c('p',[_v("Use case resumes at step 2.")])])])])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Use case: Save the current state of CapitalConnect dashboard")])])}
+with(this){return _c('h4',{attrs:{"id":"use-case-uc5-save-the-current-state-of-capitalconnect-dashboard"}},[_v("Use case: UC5 - Save the current state of CapitalConnect dashboard"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc5-save-the-current-state-of-capitalconnect-dashboard","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
@@ -332,7 +332,7 @@ with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. Issue with saving the dashboard state.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. CapitalConnect shows an error message indicating the issue with saving the dashboard state.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
 },function anonymous(
 ) {
-with(this){return _c('h4',{attrs:{"id":"use-case-uc4-delete-a-startup-investment-from-the-portfolio"}},[_v("Use case: UC4 - Delete a startup investment from the portfolio"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc4-delete-a-startup-investment-from-the-portfolio","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h4',{attrs:{"id":"use-case-uc6-delete-a-startup-investment-from-the-portfolio"}},[_v("Use case: UC6 - Delete a startup investment from the portfolio"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc6-delete-a-startup-investment-from-the-portfolio","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
@@ -347,7 +347,7 @@ with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 with(this){return _c('ul',[_c('li',[_c('p',[_v("4a. Invalid input or missing parameters.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("4a1. CapitalConnect shows an error message.")]),_v(" "),_c('p',[_v("Use case resumes at step 2.")])])])]),_v(" "),_c('li',[_c('p',[_v("5a. Specified index is out of range or no startup investments at the specified index.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("5a1. CapitalConnect shows an error message indicating the issue.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
 },function anonymous(
 ) {
-with(this){return _c('h4',{attrs:{"id":"use-case-uc5-edit-a-startup-investment-from-the-portfolio"}},[_v("Use case: UC5 - Edit a startup investment from the portfolio"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc5-edit-a-startup-investment-from-the-portfolio","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h4',{attrs:{"id":"use-case-uc7-edit-a-startup-investment-from-the-portfolio"}},[_v("Use case: UC7 - Edit a startup investment from the portfolio"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc7-edit-a-startup-investment-from-the-portfolio","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
@@ -362,7 +362,7 @@ with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 with(this){return _c('ul',[_c('li',[_c('p',[_v("4a. Invalid input or missing parameters.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("4a1. CapitalConnect shows an error message.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("5a. Specified index is out of range or no startup investments.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("5a1. CapitalConnect shows an error message indicating the issue.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
 },function anonymous(
 ) {
-with(this){return _c('h4',{attrs:{"id":"use-case-uc6-list-all-startups-in-capitalconnect"}},[_v("Use case: UC6 - List all startups in CapitalConnect"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc6-list-all-startups-in-capitalconnect","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h4',{attrs:{"id":"use-case-uc8-list-all-startups-in-capitalconnect"}},[_v("Use case: UC8 - List all startups in CapitalConnect"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc8-list-all-startups-in-capitalconnect","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
@@ -374,7 +374,7 @@ with(this){return _c('ol',[_c('li',[_v("User requests to list all startups in Ca
 with(this){return _c('p',[_c('strong',[_v("Use case ends.")])])}
 },function anonymous(
 ) {
-with(this){return _c('h4',{attrs:{"id":"use-case-uc7-clear-all-startups-in-capitalconnect"}},[_v("Use case: UC7 - Clear all startups in CapitalConnect"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc7-clear-all-startups-in-capitalconnect","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h4',{attrs:{"id":"use-case-uc9-clear-all-startups-in-capitalconnect"}},[_v("Use case: UC9 - Clear all startups in CapitalConnect"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc9-clear-all-startups-in-capitalconnect","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
@@ -386,7 +386,7 @@ with(this){return _c('ol',[_c('li',[_v("User requests to clear all startups in C
 with(this){return _c('p',[_c('strong',[_v("Use case ends.")])])}
 },function anonymous(
 ) {
-with(this){return _c('h4',{attrs:{"id":"use-case-uc8-add-a-note-to-a-startup"}},[_v("Use Case: UC8 - Add a Note to a Startup"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc8-add-a-note-to-a-startup","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h4',{attrs:{"id":"use-case-uc10-add-a-note-to-a-startup"}},[_v("Use Case: UC10 - Add a Note to a Startup"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc10-add-a-note-to-a-startup","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
@@ -407,7 +407,7 @@ with(this){return _c('ul',[_c('li',[_v("4a1. CapitalConnect shows an error messa
 with(this){return _c('ul',[_c('li',[_v("5a1. CapitalConnect shows an error message indicating the issue.")]),_v(" "),_c('li',[_c('strong',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
-with(this){return _c('h4',{attrs:{"id":"use-case-uc9-edit-an-existing-note-of-a-startup"}},[_v("Use Case: UC9 - Edit an Existing Note of a Startup"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc9-edit-an-existing-note-of-a-startup","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h4',{attrs:{"id":"use-case-uc11-edit-an-existing-note-of-a-startup"}},[_v("Use Case: UC11 - Edit an Existing Note of a Startup"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc11-edit-an-existing-note-of-a-startup","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
@@ -428,7 +428,7 @@ with(this){return _c('ul',[_c('li',[_v("4a1. CapitalConnect shows an error messa
 with(this){return _c('ul',[_c('li',[_v("5a1. CapitalConnect shows an error message indicating the issue.")]),_v(" "),_c('li',[_c('strong',[_v("Use case resumes at step 2.")])])])}
 },function anonymous(
 ) {
-with(this){return _c('h4',{attrs:{"id":"use-case-uc10-delete-a-note-from-a-startup"}},[_v("Use Case: UC10 - Delete a Note from a Startup"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc10-delete-a-note-from-a-startup","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h4',{attrs:{"id":"use-case-uc12-delete-a-note-from-a-startup"}},[_v("Use Case: UC12 - Delete a Note from a Startup"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc12-delete-a-note-from-a-startup","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
@@ -449,7 +449,7 @@ with(this){return _c('ul',[_c('li',[_v("4a1. CapitalConnect shows an error messa
 with(this){return _c('ul',[_c('li',[_v("5a1. CapitalConnect shows an error message indicating the issue.")]),_v(" "),_c('li',[_c('strong',[_v("Use case resumes at step 2.")])])])}
 },function anonymous(
 ) {
-with(this){return _c('h4',{attrs:{"id":"use-case-uc11-add-a-person-to-a-startup"}},[_v("Use Case: UC11 - Add a Person to a Startup"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc11-add-a-person-to-a-startup","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h4',{attrs:{"id":"use-case-uc13-add-a-person-to-a-startup"}},[_v("Use Case: UC13 - Add a Person to a Startup"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc13-add-a-person-to-a-startup","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
@@ -467,7 +467,7 @@ with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 with(this){return _c('ul',[_c('li',[_c('p',[_v("4a. Invalid input or missing parameters.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("4a1. CapitalConnect shows an error message.")]),_v(" "),_c('p',[_v("Use case resumes at step 2.")])])])]),_v(" "),_c('li',[_c('p',[_v("4b. Person email already exists in the startup's person list.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("4b1. CapitalConnect notifies the user about the duplicate entry.")]),_v(" "),_c('p',[_v("Use case resumes at step 2.")])])])])])}
 },function anonymous(
 ) {
-with(this){return _c('h4',{attrs:{"id":"use-case-uc12-edit-an-existing-person-in-a-startup"}},[_v("Use Case: UC12 - Edit an Existing Person in a Startup"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc12-edit-an-existing-person-in-a-startup","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h4',{attrs:{"id":"use-case-uc14-edit-an-existing-person-in-a-startup"}},[_v("Use Case: UC14 - Edit an Existing Person in a Startup"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc14-edit-an-existing-person-in-a-startup","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
@@ -485,7 +485,7 @@ with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 with(this){return _c('ul',[_c('li',[_c('p',[_v("4a. Invalid input or missing parameters.")]),_v(" "),_c('ul',[_c('li',[_v("4a1. CapitalConnect shows an error message.\nUse case resumes at step 2.")])])]),_v(" "),_c('li',[_c('p',[_v("4b. Edited person email already exists in the startup's person list.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("4b1. CapitalConnect notifies the user about the duplicate entry.")]),_v(" "),_c('p',[_v("Use case resumes at step 2.")])])])])])}
 },function anonymous(
 ) {
-with(this){return _c('h4',{attrs:{"id":"use-case-uc13-delete-a-person-from-a-startup"}},[_v("Use Case: UC13 - Delete a Person from a Startup"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc13-delete-a-person-from-a-startup","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h4',{attrs:{"id":"use-case-uc15-delete-a-person-from-a-startup"}},[_v("Use Case: UC15 - Delete a Person from a Startup"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-uc15-delete-a-person-from-a-startup","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
@@ -614,6 +614,6 @@ with(this){return _c('h2',{attrs:{"id":"appendix-planned-enhancement"}},[_c('str
 with(this){return _c('ol',[_c('li',[_c('p',[_v("Limit length of startup name: Currently we do not limit length of startup name user can input. This\nresults in overflow. We plan to address this in the future by limiting length of startup names to 32 letters long.")])]),_v(" "),_c('li',[_c('p',[_v("Supporting country codes: Currently we do not allow users to specify country codes using \"-\", this makes it hard to track\ninternational numbers. We plan to allow for the user to add an optional country code field alongside the phone number in further iterations.")])]),_v(" "),_c('li',[_c('p',[_v("Limit phone numbers: Currently we do not limit the length of phone numbers users can input. This may result in a UI overflow.\nWe plan to address this in the future by limiting the length of the phone number to 8 digits for the number and 3 digits for the country code after planned enhancement 2 has been completed.")])]),_v(" "),_c('li',[_c('p',[_v("Supporting non-alphanumerical characters in startup names: Some company names may contain non-alphanumerical characters. We plan to address this in the future by allowing for such characters to be in the name,\nbut also changing the current regular expression rules to ensure that the input remains valid.")])]),_v(" "),_c('li',[_c('p',[_v("Supporting non-alphanumerical characters in tags: Currently tags must be in alphanumerical characters without spacings. This forces users to find alternative means to add tags, such as using camel case within their tags instead. For example,\n"),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("US based")]),_v(" would not be an allowed tag, resorting in users tagging the startup as "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("USBased")]),_v(" instead. We plan to address this in the future by allowing for such characters to be in the tag,\nbut also changing the current regular expression rules to ensure that the input remains valid.")])]),_v(" "),_c('li',[_c('p',[_v("Supporting Indexes for notes: Currently, notes displayed do not contain information about their indexes, making editing and deleting them not as straightforward and requires remembering their index or counting from the top. We plan to address this in a future iteration.")])]),_v(" "),_c('li',[_c('p',[_v("Supporting partial matching in find commands: We understand that you might want to use partial matching to find matching startups, but this feature is currently under development. This feature will be dropped soon!")])]),_v(" "),_c('li',[_c('p',[_v("Potential limitation in detecting duplicated persons: Note that duplicated persons in one startup are detected by "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("pe/EMAIL")]),_v(". We assume that email is unique for every person. In other words, we assume that it is possible to have 3 Johns in one company, and they all have different emails. Before adding a new person to the startup, always double-check their email to make sure that the person is not added already. Also take note that we allow one person to work in multiple startups.")])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Mon, 15 Apr 2024, 22:22:41 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Mon, 15 Apr 2024, 23:33:44 GMT+8]")])])])}
 }];
   
