@@ -25,6 +25,7 @@ Class Valuation
 Class Note
 
 Class UniquePersonList
+Class Person
 Class PersonName
 Class PersonEmail
 Class Description
